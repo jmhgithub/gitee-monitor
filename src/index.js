@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Home from './js/busi/containers/Home'
-import Gitee from './js/busi/containers/Gitee'
-import ProjectFileCount from './js/busi/containers/ProjectFileCount'
-import FileCommiterAndLines from './js/busi/containers/FileCommiterAndLines'
+import ProjectFileCount from './js/busi/containers/summary/ProjectFileCount'
+import FileCommiterAndLines from './js/busi/containers/projects/FileCommiterAndLines'
 
 import 'antd/dist/antd.css';
 import './resource/css/index.css'
