@@ -31,10 +31,10 @@ class FileDetail extends React.PureComponent {
 				</Row>
 				{/* <Row gutter={16}>
 					<Col span={12}>
-						<Statistic title="贡献者" value={''} />
+						<Statistic title="贡献者" value={''} />npm
 						<div>
-							{this.commiter.map(item=>{
-								return <Commiter commiter={item}/>
+							{this.commiter.map((item,index)=>{
+								return <Commiter key={index} commiter={item}/>
 							})}
 						</div>
 					</Col>
