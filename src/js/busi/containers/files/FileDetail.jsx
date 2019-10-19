@@ -2,13 +2,15 @@ import React from 'react';
 import { Statistic, Row, Col, Button } from 'antd';
 import { withRouter } from 'react-router-dom'
 import Commiter from '../../components/Commiter'
-import echarts from 'echarts'
+import CodeAndCommiters from './CodeAndCommiters'
+
 class FileDetail extends React.PureComponent {
 	constructor(props) {
 		super(props);
 		this.commiter=['李','王','陈','杨','赵']
 	}
 	render() {
+		console.log('======')
 		return (
 			<div className="chart">
 				<Row gutter={16}>
@@ -27,7 +29,7 @@ class FileDetail extends React.PureComponent {
 						<Statistic title="其他" value={'AAA'} precision={2} />
 					</Col>
 				</Row>
-				<Row gutter={16}>
+				{/* <Row gutter={16}>
 					<Col span={12}>
 						<Statistic title="贡献者" value={''} />
 						<div>
@@ -36,7 +38,8 @@ class FileDetail extends React.PureComponent {
 							})}
 						</div>
 					</Col>
-				</Row>
+				</Row> */}
+				<CodeAndCommiters />
 			</div>
 		)
 	}
