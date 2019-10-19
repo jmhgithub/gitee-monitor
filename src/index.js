@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Home from './js/busi/containers/Home'
 import ProjectFileCount from './js/busi/containers/summary/ProjectFileCount'
 import FileCommiterAndLines from './js/busi/containers/projects/FileCommiterAndLines'
+import FileDetail from './js/busi/containers/files/FileDetail'
 
 import 'antd/dist/antd.css';
 import './resource/css/index.css'
@@ -19,7 +20,7 @@ export default function App() {
             <Route path="/" render={() => 
                 <Home>
                     <Route exact path="/project" component={FileCommiterAndLines} />
-                    <Route path="/file" component={FileCommiterAndLines} />
+                    <Route path="/file" component={FileDetail} />
                     <Route exact path="/" component={ProjectFileCount} />
                 </Home>
             } />
