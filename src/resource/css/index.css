@@ -12,5 +12,9 @@ code {
     monospace;
 }
 .chart{
-  margin: 100px;
+  margin: 10px;
+  height: 470px;
+}
+#root{
+  height: 100%;
 }
